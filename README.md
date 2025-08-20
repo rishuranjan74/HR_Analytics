@@ -15,6 +15,8 @@ This project focuses on analyzing and predicting employee attrition using a data
 
 The analysis is based on the `employe.csv` file, which contains various attributes about employees, including their professional details and whether they have left the company (`left`).
 
+---
+
 ## Analysis and Findings
 
 ### 1. Exploratory Data Analysis (EDA)
@@ -25,10 +27,22 @@ The analysis is based on the `employe.csv` file, which contains various attribut
 * **Project Count Impact:** Employees working on **2, 6, or 7 projects** have the highest attrition rates, and the attrition rate for employees with less than three projects is a notable **40.06%**.
 * **Key Indicators:** Employees who left typically had a lower satisfaction level, higher average monthly hours, and a tenure of 3-6 years, with a peak at 5 years. The analysis also highlighted a group of high-performing, overworked employees with high evaluation scores but low satisfaction who were prone to leaving.
 
+---
+
 ### 2. Predictive Modeling
 
-* **Model Selection:** Several models were tested, including Logistic Regression, SVM, Decision Tree, and advanced ensemble models like Gradient Boosting and XGBoost.
+* **Models Used:** Several machine learning models were trained to predict employee attrition, including:
+    * **Logistic Regression**
+    * **Support Vector Machine (SVM)**
+    * **K-Nearest Neighbors (KNN)**
+    * **Decision Tree**
+    * **AdaBoost**
+    * **Gradient Boosting**
+    * **XGBoost**
+    * **Multi-layer Perceptron (MLP)**
 * **Performance:** The **XGBoost** model demonstrated the best performance, achieving an accuracy of **99.2%** and a ROC-AUC score of **0.994** on the hold-out test set.
+
+---
 
 ### 3. Employee Churn Risk Segmentation
 
